@@ -5,7 +5,7 @@ const cors = require("cors");
 
 corsOptions = {
   cors: true,
-  origins: ["http://localhost:3000"],
+  origins: ["https://shoot-io.netlify.app/"],
 };
 
 const PORT = process.env.PORT || 5000;
