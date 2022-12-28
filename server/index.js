@@ -56,6 +56,9 @@ io.on("connection", (socket) => {
     let ind = players.findIndex((player) => player.code === playerCode);
     players[ind].paired = false;
   });
+  socket.on("disconnect", () => {
+    players = players.filter((player) => player.code !== playerCode);
+  });
 });
 
 app.use(cors());
