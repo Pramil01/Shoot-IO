@@ -1,4 +1,4 @@
-const socket = io("http://localhost:5000");
+const socket = io("https://shoot-io.onrender.com");
 var canvas = document.getElementById("canvas");
 var head1 = document.getElementById("head1");
 var head2 = document.getElementById("head2");
